@@ -1,3 +1,4 @@
+#Текстікі та кубікі
 import cv2
 import numpy as np
 from numpy.ma.core import filled # Unused import, but leaving it as is
@@ -29,3 +30,4 @@ cv2.putText(img, "YO WASSUP WORLD", (100, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (
 cv2.imshow("image", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+

@@ -46,6 +46,9 @@ mask_green = cv2.inRange(hsv, lower_green, upper_green)
 mask_blue = cv2.inRange(hsv, lower_blue, upper_blue)
 mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
 
+# Combine all the masks into one
+mask_combined = (mask_red | mask_green | mask_blue | mask_yellow)
+
 # --- BUNDLE DATA FOR PROCESSING ---
 # We create a list of groups to keep our code clean and avoid repeating the drawing steps four times. 
 # Each group contains: (The specific color mask, "The Text Label", (B, G, R box color))
